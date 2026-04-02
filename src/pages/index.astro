@@ -98,7 +98,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
               ({ data, slug }, index) =>
                 index < 4 && (
                   <Card
-                    href={`/posts/${slug}/`}
+                    href={`${import.meta.env.BASE_URL}/posts/${slug}/`}
                     frontmatter={data}
                     secHeading={false}
                   />
